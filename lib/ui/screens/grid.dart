@@ -1,3 +1,4 @@
+import 'package:first/colors/colors.dart';
 import 'package:first/main.dart';
 import 'package:flutter/material.dart';
 ///stl
@@ -44,6 +45,7 @@ class _GridstfState extends State<Gridstf> {
           children: [
             ///Grid
             Container(
+              color: AppColors.primary,
               child:  GridView.count(
              crossAxisCount: 3,
             crossAxisSpacing: 10.0,
@@ -64,7 +66,8 @@ class _GridstfState extends State<Gridstf> {
                   ),
                 ),
               );
-            },),
+            },
+            ),
             ),
             ),
           ],
