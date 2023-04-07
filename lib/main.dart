@@ -1,6 +1,12 @@
 import 'package:first/api_constants.dart';
 import 'package:first/bloc/regsiter_bloc/login_bloc.dart';
 import 'package:first/bloc/regsiter_bloc/register_bloc.dart';
+import 'package:first/ui/Practise_screens/bottom_navbar.dart';
+import 'package:first/ui/Practise_screens/constraintbox.dart';
+import 'package:first/ui/Practise_screens/dialogbox.dart';
+import 'package:first/ui/Practise_screens/formvalidation.dart';
+import 'package:first/ui/Practise_screens/table.dart';
+import 'package:first/ui/screens/Market_app/market_growth.dart';
 import 'package:first/ui/screens/design1.dart';
 import 'package:first/ui/screens/exampledesign.dart';
 import 'package:first/ui/screens/grid.dart';
@@ -36,7 +42,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
       ),
       debugShowCheckedModeBanner: false,
-      home: Grid(),
+      home: Market_Growth(),
       //home: MyNewScreen(),
     );
   }

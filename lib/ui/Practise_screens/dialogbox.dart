@@ -53,27 +53,20 @@ class _DialogSTFState extends State<DialogSTF> {
                     onPressed: (){
                       showAlertDialog(context);
                     },
-                    child: Text('Submit',
+                    child: Text('Submit ',
                       style: TextStyle(
                         fontSize: 25.0,
                         fontWeight: FontWeight.w600,
                     ),
                     ),
                 ),
-
               ),
             ),
-
           ],
-
         ),
-
       ),
-
     );
-
   }
-
 }
 
 ///Alert message show in flutter
@@ -83,8 +76,7 @@ showAlertDialog(BuildContext context) {
     style: ElevatedButton.styleFrom(
       primary: Colors.green,
       shape: RoundedRectangleBorder(
-
-      )
+      ),
     ),
     child: Text("OK"),
     onPressed: () {

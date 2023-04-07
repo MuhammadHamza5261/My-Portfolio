@@ -45,7 +45,7 @@ class _GridstfState extends State<Gridstf> {
           children: [
             ///Grid
             Container(
-              color: AppColors.primary,
+              // color: AppColors.primary,
               child:  GridView.count(
              crossAxisCount: 3,
             crossAxisSpacing: 10.0,
