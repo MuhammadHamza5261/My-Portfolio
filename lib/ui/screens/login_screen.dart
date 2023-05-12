@@ -1,10 +1,12 @@
-import 'package:first/bloc/regsiter_bloc/login_event.dart';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import '../../bloc/regsiter_bloc/login_bloc.dart';
-import '../../bloc/regsiter_bloc/login_state.dart';
+import '../../bloc/login_bloc/login_bloc.dart';
+import '../../bloc/login_bloc/login_event.dart';
+import '../../bloc/login_bloc/login_state.dart';
 
 
+///Stf
 class LoginScreen extends StatefulWidget {
   const LoginScreen({Key? key}) : super(key: key);
 
@@ -68,7 +70,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   ),
                   Container(
                     height: 50,
-                    padding: const EdgeInsets.fromLTRB(10, 0, 10, 0),
+                    padding: const EdgeInsets.fromLTRB(10,0,10,0),
                     child: ElevatedButton(
                       child: Text('Login'),
                       onPressed: () {
@@ -87,7 +89,8 @@ class _LoginScreenState extends State<LoginScreen> {
                   ),
                   BlocListener<LoginBloc,LoginState>(listener: (context,LoginState){
 
-                  },child:BlocBuilder<LoginBloc,LoginState>(
+                  },
+                    child:BlocBuilder<LoginBloc,LoginState>(
                       builder: (context,state)
                       {
                         if(state is LoginDataIsLoadedState)

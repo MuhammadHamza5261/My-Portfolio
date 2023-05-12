@@ -1,5 +1,7 @@
 import 'package:first/main.dart';
 import 'package:flutter/material.dart';
+
+import 'market_growth2.dart';
 ///stl
 class Market_Growth extends StatelessWidget {
   const Market_Growth({Key? key}) : super(key: key);
@@ -78,27 +80,32 @@ class _MarketGrowthSTFState extends State<MarketGrowthSTF> {
                   SizedBox(
                     height: 35.0,
                   ),
-                  Container(
-                    width: MediaQuery.of(context).size.width *0.45,
-                    height: MediaQuery.of(context).size.height *0.08,
-                    decoration: BoxDecoration(
-                      color: Colors.black,
-                      borderRadius: BorderRadius.circular(35.0,)
-                    ),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                      children: [
-                        Text('Get Started',style: TextStyle(fontSize: 25.0,color: Colors.white,fontWeight: FontWeight.w600),),
-                        Container(
-                          width: MediaQuery.of(context).size.width *0.1,
-                          height: MediaQuery.of(context).size.height *0.06,
-                          decoration: BoxDecoration(
-                            color: Colors.white,
-                            borderRadius: BorderRadius.circular(35.0),
+                  TextButton(
+                    onPressed: (){
+                      Navigator.of(context).push(MaterialPageRoute(builder: (context) => Market_growth2()));
+                    },
+                    child: Container(
+                      width: MediaQuery.of(context).size.width *0.45,
+                      height: MediaQuery.of(context).size.height *0.08,
+                      decoration: BoxDecoration(
+                        color: Colors.black,
+                        borderRadius: BorderRadius.circular(35.0,)
+                      ),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                        children: [
+                          Text('Get Started',style: TextStyle(fontSize: 25.0,color: Colors.white,fontWeight: FontWeight.w600),),
+                          Container(
+                            width: MediaQuery.of(context).size.width *0.1,
+                            height: MediaQuery.of(context).size.height *0.06,
+                            decoration: BoxDecoration(
+                              color: Colors.white,
+                              borderRadius: BorderRadius.circular(35.0),
+                            ),
+                            child: Icon(Icons.arrow_forward_outlined,size: 30.0,color: Colors.pink,),
                           ),
-                          child: Icon(Icons.arrow_forward_outlined,size: 30.0,),
-                        ),
-                      ],
+                        ],
+                      ),
                     ),
                   ),
                 ],

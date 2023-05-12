@@ -93,39 +93,6 @@ class MyCustomFormState extends State<MyCustomForm> {
             },
           ),
            ///weshop email input field
-          // Container(
-          //   key: _formKey,
-          //   child: Column(
-          //     children: [
-          //       Container(
-          //         margin: EdgeInsets.only(top: 17.0,),
-          //         width: width*0.93,
-          //         height: height*0.053,
-          //         child: TextFormField(
-          //           cursorColor: Color.fromRGBO(100,100,100,1),
-          //           decoration: InputDecoration(
-          //             contentPadding: EdgeInsets.only(left: 17.0,top:10.0,),
-          //             focusedBorder: OutlineInputBorder(
-          //               borderSide: BorderSide(color: Color.fromRGBO(0, 173, 25, 1), width: 1.2),
-          //             ),
-          //             enabledBorder: OutlineInputBorder(
-          //               borderSide: BorderSide(color: Color.fromRGBO(100,100,100,1), width: 1.2),
-          //             ),
-          //             hintText: 'Email',
-          //           ),
-          //           validator: (value) {
-          //             if (value!.isEmpty) {
-          //               return 'Please enter some text';
-          //             }
-          //             return null;
-          //           },
-          //         ),
-          //       ),
-          //
-          //     ],
-          //   ),
-          // ),
-
            Container(
               padding: const EdgeInsets.only(left: 150.0, top: 40.0),
               child:  ElevatedButton(

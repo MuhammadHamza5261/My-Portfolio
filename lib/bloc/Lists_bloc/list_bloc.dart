@@ -19,7 +19,7 @@ class ListsBloc extends Bloc<ListEvent,ListState>{
           }
           catch(e)
       {
-        emit(ListsErrorState('Something went wrong'));
+         emit(ListsErrorState('Something went wrong'));
       }
         }
     });

@@ -108,7 +108,6 @@ class _DesignSTFState extends State<DesignSTF> {
                 children: [
                   Container(
                     margin: EdgeInsets.only(left: 10.0,),
-
                     width: MediaQuery.of(context).size.width*0.3,
                     height: MediaQuery.of(context).size.height*0.11,
                     decoration: BoxDecoration(

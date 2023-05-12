@@ -30,13 +30,6 @@ class _ListScreen2State extends State<ListScreen2> {
 
 
 
-
-
-
-
-
-
-
   /// cal api on init method in flutter
   @override
   void initState() {
@@ -46,10 +39,11 @@ class _ListScreen2State extends State<ListScreen2> {
   }
 
 
-  @override
-  Widget build(BuildContext context) {
+   @override
+   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
+
         appBar: AppBar(
           backgroundColor: Colors.pinkAccent,
           centerTitle: true,
@@ -69,7 +63,7 @@ class _ListScreen2State extends State<ListScreen2> {
                   ListsModel listsModel = state.listsModel;
 
                   return Padding(
-                    padding: EdgeInsets.all(8.0,),
+                    padding: const EdgeInsets.all(8.0,),
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.start,
                       crossAxisAlignment: CrossAxisAlignment.start,
@@ -80,7 +74,7 @@ class _ListScreen2State extends State<ListScreen2> {
 
                               },
                      controller: editingController,
-                    decoration: InputDecoration(
+                    decoration: const InputDecoration(
                         labelText: "Search",
                         hintText: "Search",
                         prefixIcon: Icon(Icons.search),
@@ -90,10 +84,10 @@ class _ListScreen2State extends State<ListScreen2> {
             ),
 
 
-                        SizedBox(
+                      const  SizedBox(
                           height: 20,
                         ),
-                        Container(
+                        Container (
                           child: Expanded(
                             child: ListView.builder(
                               itemCount: 4,
@@ -126,13 +120,13 @@ class _ListScreen2State extends State<ListScreen2> {
                                         fontSize: 23.0,
                                         fontWeight: FontWeight.w600,
                                       ),
-
                                       ),
                                       SizedBox(
                                         height: 10,
                                       ),
 
-                                      Text('First Name: ${listsModel.data[i].firstName}',style: TextStyle(
+                                      Text('First Name: ${listsModel.data[i].firstName}',
+                                        style: TextStyle(
                                         color: Colors.black,
                                         fontSize: 23.0,
                                         fontWeight: FontWeight.w600,

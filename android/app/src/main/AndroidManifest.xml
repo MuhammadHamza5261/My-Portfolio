@@ -3,6 +3,7 @@
    <application
         android:label="first"
         android:name="${applicationName}"
+        android:allowBackup="true"
         android:icon="@mipmap/ic_launcher">
         <activity
             android:name=".MainActivity"
@@ -30,5 +31,5 @@
         <meta-data
             android:name="flutterEmbedding"
             android:value="2" />
-    </application>
-</manifest>
+        </application>
+    </manifest>

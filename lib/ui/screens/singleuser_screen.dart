@@ -27,16 +27,6 @@ class _SingleuserscreenState extends State<Singleuserscreen> {
     super.initState();
   }
 
-
-
-
-
-
-
-
-
-
-
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -108,12 +98,8 @@ class _SingleuserscreenState extends State<Singleuserscreen> {
                               color: Colors.black,
                             ),
                           ),
-
-
-
                         ],
                       ),
-
                     ),
 
                   ],

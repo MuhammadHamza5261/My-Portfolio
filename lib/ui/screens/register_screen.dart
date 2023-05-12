@@ -91,6 +91,11 @@ class _RegisterScreenState extends State<RegisterScreen> {
                           ));
                     }
                 ),
+
+
+
+
+
                 Row(
                   children: <Widget>[
                     const Text('Does not have account?'),

@@ -5,7 +5,7 @@ class LoginService
 {
   Future<LoginModel> setDataToLoginService({required String email, required String password})
   async{
- final response = await http.post(Uri.parse('https://reqres.in/api/login'),
+ final response = await http.post(Uri.parse('https://veromobileapp-portal.azurewebsites.net/api/Users/v1.0/Login'),
    headers: <String,String>
    {
      "Content-type": "application/json",
@@ -22,9 +22,12 @@ class LoginService
    final data = jsonDecode(response.body);
    return LoginModel.fromJson(data);
  }
- else
- {
+  else
+  {
+
    throw Exception('${response.statusCode} : ${response.reasonPhrase}');
- }
+
+  }
+
   }
 }

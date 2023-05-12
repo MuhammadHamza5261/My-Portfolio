@@ -1,28 +1,29 @@
 import 'dart:convert';
-import '../models/lists_model.dart';
-import 'package:http/http.dart'as http;
+import 'package:http/http.dart' as http;
+import '../models/resource_model.dart';
 
-class ListService
-{
-  Future<ListsModel> getDataToListsService()
+class Resourceservice{
+  Future<ResourceModel> getDataToResponseService()
   async{
-    final response = await http.get(Uri.parse('https://reqres.in/api/users?page=2'),
+    final response  = await http.get(Uri.parse('https://reqres.in/api/unknown'),
         headers: <String,String>
         {
         "Content-type": "application/json",
         "Accept": "application/json",
         },
-
     );
 
     if(response.statusCode == 200)
     {
       final data = jsonDecode(response.body);
-      return ListsModel.fromJson(data);
+      return ResourceModel.fromJson(data);
     }
     else
     {
       throw Exception('${response.statusCode} : ${response.reasonPhrase}');
     }
+
+
   }
+
 }
