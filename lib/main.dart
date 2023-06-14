@@ -8,7 +8,7 @@ import 'package:first/ui/screens/register_screen.dart';
 import 'package:first/ui/screens/singleuser_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'Secure_Storage/example1.dart';
+import 'Secure_Storage/secure_storage_screen1.dart';
 import 'bloc/Lists_bloc/list_bloc.dart';
 import 'bloc/SingleResource_bloc/resource_bloc.dart';
 import 'bloc/login_bloc/login_bloc.dart';

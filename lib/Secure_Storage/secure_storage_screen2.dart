@@ -3,7 +3,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 // import 'package:fluttersharedpreferences/main.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'example1.dart';
+import 'secure_storage_screen1.dart';
 
 class MainPage extends StatelessWidget {
   @override

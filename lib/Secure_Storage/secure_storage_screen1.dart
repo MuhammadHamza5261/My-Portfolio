@@ -1,7 +1,7 @@
 import 'package:first/Secure_Storage/shared_preferences.dart';
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'example2.dart';
+import 'secure_storage_screen2.dart';
 
 class MyAppsecurestorage extends StatefulWidget {
 
@@ -59,13 +59,13 @@ class _MyLoginPageState extends State<MyLoginPage> {
     print(newUser);
     if (newUser == false) {
       Navigator.pushReplacement(
-          context, new MaterialPageRoute(builder: (context) => MyDashboard()));
+          context, MaterialPageRoute(builder: (context) => MyDashboard()));
     }
   }
 
   @override
   void dispose() {
-    // Clean up the controller when the widget is disposed.
+
     usernameController.dispose();
     passwordController.dispose();
     super.dispose();
@@ -94,8 +94,8 @@ class _MyLoginPageState extends State<MyLoginPage> {
                 height: 30.0,
               ),
               const Text(
-                "Login Form",
-                style: TextStyle(
+                 "Login Form",
+                 style: TextStyle(
                     fontSize: 30,
                     fontWeight: FontWeight.bold,
                 ),
