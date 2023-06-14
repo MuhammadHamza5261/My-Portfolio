@@ -6,7 +6,7 @@ class Exampledesign extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return const Scaffold(
       body: ExampledesignSTF(),
     );
   }
@@ -36,7 +36,7 @@ class _ExampledesignSTFState extends State<ExampledesignSTF> {
           children: [
             Container(
               child: Row(
-                children: [
+                children: const [
                   Myfirstrow(
                       imagepath: "assets/images/blur2.jpg",
                       text: "hamza",

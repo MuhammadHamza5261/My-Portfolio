@@ -8,6 +8,8 @@ import '../../models/resource_model.dart';
 
 
 class ResourceScreen extends StatefulWidget {
+  const ResourceScreen({super.key});
+
 
   @override
   State<ResourceScreen> createState() => _ResourceScreenState();
@@ -16,17 +18,18 @@ class ResourceScreen extends StatefulWidget {
 
 class _ResourceScreenState extends State<ResourceScreen>{
 
-
   /// cal api on init method in flutter then they will run on when the app is start
-  @override
-  void initState() {
+   @override
+   void initState() {
     ///call the bloc method on init state
     BlocProvider.of<Resourcebloc>(context).add(SetDataToResourceEvent());
     super.initState();
-  }
+   }
 
   late double height;
   late double width;
+
+
 
 
   @override
