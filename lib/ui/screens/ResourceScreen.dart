@@ -29,9 +29,6 @@ class _ResourceScreenState extends State<ResourceScreen>{
   late double height;
   late double width;
 
-
-
-
   @override
   Widget build(BuildContext context) {
 

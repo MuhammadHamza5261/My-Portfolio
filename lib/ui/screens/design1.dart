@@ -37,129 +37,80 @@ class _designSTFState extends State<designSTF> {
         child: Column(
           children: [
           ///1st row
-            SizedBox(
+            const SizedBox(
               height: 25.0,
             ),
-            Container(
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Column(
-                    children: [
-                      Container(
-                        margin: EdgeInsets.only(left: 40.0,),
-                        child: Text('Find the Best',
-                        style: TextStyle(
-                          fontSize: 25.0,
-                          fontWeight: FontWeight.w600,
-                        ),
-                        ),
-                      ),
-                      SizedBox(
-                        height: 3.0,
-                      ),
-                      Row(
-                        children: [
-                          Container(
-                            margin: EdgeInsets.only(left: 17.0,),
-                            child: Text('Podcast',
-                              style: TextStyle(
-                                fontSize: 25.0,
-                                fontWeight: FontWeight.w600,
-                              ),
-                            ),
-                          ),
-                          Container(
-                            child: Icon(Icons.keyboard_voice_sharp,size: 30.0,color: Colors.purple,),
-                          ),
-                        ],
-                      ),
-                    ],
-                  ),
-                Container(
-                  margin: const EdgeInsets.only(left: 160.0,),
-                  child: const Icon(Icons.search,size: 40.0,color: Colors.purple,),
-                ),
-                  Container(
-                    margin: EdgeInsets.only(right: 20.0,),
-                    child: Icon(Icons.notification_add_sharp,size: 40.0,color: Colors.purple,),
-                  ),
-
-                ],
-              ),
-            ),
-            ///2nd row
-            SizedBox(
-              height: 10.0,
-            ),
-            Container(
-              width: MediaQuery.of(context).size.width *0.9,
-              height: MediaQuery.of(context).size.height *0.22,
-              child: Card(
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(25.0,)
-                ),
-                color: Colors.purpleAccent,
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Column(
                   children: [
-                    Column(
+                    Container(
+                      margin: const EdgeInsets.only(left: 40.0,),
+                      child: const Text('Find the Best',
+                      style: TextStyle(
+                        fontSize: 25.0,
+                        fontWeight: FontWeight.w600,
+                      ),
+                      ),
+                    ),
+                    const SizedBox(
+                      height: 3.0,
+                    ),
+                    Row(
                       children: [
-                        SizedBox(
-                          height: 70.0,
-                        ),
                         Container(
-                          margin: EdgeInsets.only(left: 20.0,),
-                          child: Text('Listen to Podcast Premium',
-                          style: TextStyle(
-                            fontSize: 23.0,
-                            color: Colors.white,
-                            fontWeight: FontWeight.w600,
-                          ),),
-                        ),
-                        SizedBox(
-                          height: 10.0,
-                        ),
-                        Container(
-                          margin: EdgeInsets.only(right: 16.0,),
-                          child: Text('Offer Listeners by Unlocking the',
+                          margin: EdgeInsets.only(left: 17.0,),
+                          child: Text('Podcast',
                             style: TextStyle(
-                              fontWeight: FontWeight.w500,
-                              color: Colors.white,
-                              fontSize: 17.0,
+                              fontSize: 25.0,
+                              fontWeight: FontWeight.w600,
                             ),
                           ),
                         ),
                         Container(
-                          margin: EdgeInsets.only(right: 72.0,),
-                          child: Text('benefits of paid podcast',
-                            style: TextStyle(
-                              fontWeight: FontWeight.w500,
-                              color: Colors.white,
-                              fontSize: 17.0,
-                            ),
-                          ),
-                        ),
-                        Container(
-                          margin: EdgeInsets.only(left: 8.0,),
-                          child: Text('subscriptions with Apple Podcasts',
-                            style: TextStyle(
-                              fontWeight: FontWeight.w500,
-                              color: Colors.white,
-                              fontSize: 17.0,
-                            ),
-                          ),
+                          child: Icon(Icons.keyboard_voice_sharp,size: 30.0,color: Colors.purple,),
                         ),
                       ],
                     ),
-
-                    Container(
-                      margin: EdgeInsets.only(right: 10.0,),
-                      height: MediaQuery.of(context).size.height*0.12,
-                      width: MediaQuery.of(context).size.width*0.2,
-                      child: Image.asset('assets/images/girl3.png',),
-                    ),
                   ],
+                ),
+              Container(
+                child: const Icon(Icons.search,size: 40.0,color: Colors.purple,),
+              ),
+                Container(
+                  margin: EdgeInsets.only(right: 20.0,),
+                  child: Icon(Icons.notification_add_sharp,size: 40.0,color: Colors.purple,),
+                ),
+
+              ],
+            ),
+            ///2nd row
+            const SizedBox(
+              height: 10.0,
+            ),
+            Container(
+              width: width*0.9,
+              margin: const EdgeInsets.symmetric(horizontal: 5,vertical: 10),
+              child: Card(
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(10.0,)
+                ),
+                color: Colors.purpleAccent,
+                child:  const Padding(
+                  padding: EdgeInsets.symmetric(horizontal: 10,vertical: 10),
+                  child: Column(
+                    children: [
+                      Text('Listen to Podcast Premium Offer Listeners by Unlocking the benefits of paid podcast ubscriptions with Apple Podcasts',
+                        maxLines: 3,
+                        style: TextStyle(
+                          fontSize: 12.0,
+                          color: Colors.white,
+                          fontWeight: FontWeight.w600,
+                        ),),
+
+                    ],
+                  ),
                 ),
               ),
             ),
@@ -168,13 +119,13 @@ class _designSTFState extends State<designSTF> {
               height: 20.0,
             ),
             Container(
+              margin: EdgeInsets.symmetric(horizontal: 30),
               child: Row(
                 children: [
                   Container(
-                    margin: EdgeInsets.only(left: 38.0,),
                     child: Text('Popular & Trending',
                       style: TextStyle(
-                        fontSize: 23.0,
+                        fontSize: 18.0,
                         fontWeight: FontWeight.w600,
                       ),
                     ),
@@ -190,14 +141,15 @@ class _designSTFState extends State<designSTF> {
               height: 5.0,
             ),
             Container(
+              margin: EdgeInsets.symmetric(horizontal: 30),
               child: SingleChildScrollView(
                 scrollDirection: Axis.horizontal,
                 child: Row(
                   children: [
                     Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Container(
-                          margin: EdgeInsets.only(left: 30.0,),
                           width: MediaQuery.of(context).size.width *0.36,
                           height: MediaQuery.of(context).size.height*0.21,
                           child: Card(
@@ -212,18 +164,16 @@ class _designSTFState extends State<designSTF> {
                           height: 5.0,
                         ),
                         Container(
-                          margin: EdgeInsets.only(left: 40.0,),
                           child: Text('Effectiveness an..',style: TextStyle(
                             fontWeight: FontWeight.w600,
-                            fontSize: 21.0,
+                            fontSize: 18.0,
 
                           ),),
                         ),
                         Container(
-                          margin: EdgeInsets.only(left: 7.0,),
                           child: Text('Brooklyn Simmons',style: TextStyle(
                             fontWeight: FontWeight.w400,
-                            fontSize: 16.0,
+                            fontSize: 14.0,
 
                           ),),
                         ),
@@ -251,7 +201,7 @@ class _designSTFState extends State<designSTF> {
                           margin: EdgeInsets.only(left: 25.0,right: 20.0,),
                           child: Text('Interview pass..',style: TextStyle(
                             fontWeight: FontWeight.w600,
-                            fontSize: 21.0,
+                            fontSize: 18.0,
 
                           ),),
                         ),
@@ -259,7 +209,7 @@ class _designSTFState extends State<designSTF> {
                           margin: EdgeInsets.only(),
                           child: Text('Cameron Williamson',style: TextStyle(
                             fontWeight: FontWeight.w400,
-                            fontSize: 16.0,
+                            fontSize: 14.0,
 
                           ),),
                         ),
@@ -287,7 +237,7 @@ class _designSTFState extends State<designSTF> {
                           margin: EdgeInsets.only(right: 50.0,),
                           child: Text('Best an..',style: TextStyle(
                             fontWeight: FontWeight.w600,
-                            fontSize: 21.0,
+                            fontSize: 18.0,
 
                           ),),
                         ),
@@ -295,7 +245,7 @@ class _designSTFState extends State<designSTF> {
                           margin: EdgeInsets.only(left: 7.0,),
                           child: Text('Brooklyn Simmons',style: TextStyle(
                             fontWeight: FontWeight.w400,
-                            fontSize: 16.0,
+                            fontSize: 14.0,
 
                           ),),
                         ),
@@ -313,19 +263,18 @@ class _designSTFState extends State<designSTF> {
               height: 12.0,
             ),
             Container(
+              margin: EdgeInsets.symmetric(horizontal: 20),
               child: Row(
                 children: [
                   Container(
-                    margin: EdgeInsets.only(left: 38.0,),
                     child: Text('Continue Listening',
                       style: TextStyle(
-                        fontSize: 23.0,
+                        fontSize: 18.0,
                         fontWeight: FontWeight.w600,
                       ),
                     ),
                   ),
                   Container(
-                    margin: EdgeInsets.only(left: 4.0,top: 2.0,),
                     child: Icon(
                       Icons.headset_outlined,color: Colors.grey,size: 25.0,
                     ),
@@ -339,10 +288,11 @@ class _designSTFState extends State<designSTF> {
             ),
 
             Container(
+              margin: EdgeInsets.symmetric(horizontal: 20),
               child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Container(
-                    margin: EdgeInsets.only(left: 30.0,),
                     width: MediaQuery.of(context).size.width*0.17,
                     height: MediaQuery.of(context).size.height*0.1,
                     child: Card(
@@ -356,21 +306,20 @@ class _designSTFState extends State<designSTF> {
                     ),
                   ),
                   Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Container(
-                        margin: EdgeInsets.only(left: 15.0,),
                         child: Text('Episode 11 - DuckTales',
                           style: TextStyle(
-                            fontSize: 20.0,
-                            fontWeight: FontWeight.w600,
+                            fontSize: 16.0,
+                            fontWeight: FontWeight.w500,
                           ),
                         ),
                       ),
                       Container(
-                        margin: EdgeInsets.only(right: 110.0,top: 5),
                         child: Text('Jan 15,2023',
                           style: TextStyle(
-                            fontSize: 15.0,
+                            fontSize: 12.0,
                             fontWeight: FontWeight.w400,
                           ),
                         ),
@@ -378,12 +327,11 @@ class _designSTFState extends State<designSTF> {
                     ],
                   ),
                   Container(
-                    margin: EdgeInsets.only(left: 90.0,),
                     child:   InkWell(
                       onTap: (){
                         Navigator.of(context).push(MaterialPageRoute(builder: (context) => Design2()));
                       },
-                        child: const Icon(Icons.more_vert,size: 35.0,)),
+                        child: const Icon(Icons.more_vert,size: 30.0,)),
                   ),
                 ],
               ),
@@ -392,61 +340,28 @@ class _designSTFState extends State<designSTF> {
             SizedBox(
               height: 10.0,
             ),
-            Container(
-              margin: EdgeInsets.only(left: 35.0,),
-              child: Row(
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 20,vertical: 10),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Container(
-                    child: Text('Classic gaming today',
-                      style: TextStyle(
-                        fontWeight: FontWeight.w500, fontSize: 20.0,
-                      ),
+                  Text('Classic gaming today',
+                    style: TextStyle(
+                      fontWeight: FontWeight.w500, fontSize: 20.0,
+                    ),
+                  ),
+                  Text('Every week we look at the gamimg experince of the past,',
+                    style: TextStyle(
+                      fontWeight:
+                      FontWeight.w400,
+                      fontSize: 14.0,
                     ),
                   ),
                 ],
               ),
             ),
-            ///8th row
-            SizedBox(
-              height: 4.0,
-            ),
-            Container(
-              margin: EdgeInsets.only(left: 35.0,),
-              child: Row(
-                children: [
-                  Container(
-                    child: Text('Every week we look at the gamimg experince of the past,',
-                      style: TextStyle(
-                        fontWeight:
-                        FontWeight.w400,
-                        fontSize: 16.0,
-                      ),
-                    ),
-                  ),
-                ],
-              ),
-            ),
-            ///9th row
-            SizedBox(
-              height: 2.0,
-            ),
-            Container(
-              margin: EdgeInsets.only(left: 35.0,),
-              child: Row(
-                children: [
-                  Container(
-                    child: Text('through the eyes of the present!',
 
-                      style: TextStyle(
-                        fontWeight:
-                        FontWeight.w400,
-                        fontSize: 16.0,
-                      ),
-                    ),
-                  ),
-                ],
-              ),
-            ),
+
 
 
           ],

@@ -3,7 +3,9 @@ import 'package:first/ui/First_task/Login_screen_task.dart';
 import 'package:first/ui/Practise_screens/list_Tile.dart';
 import 'package:first/ui/Practise_screens/splash_screen.dart';
 import 'package:first/ui/screens/ResourceScreen.dart';
+import 'package:first/ui/screens/design1.dart';
 import 'package:first/ui/screens/list_screen%202.dart';
+import 'package:first/ui/screens/login_screen.dart';
 import 'package:first/ui/screens/register_screen.dart';
 import 'package:first/ui/screens/singleuser_screen.dart';
 import 'package:flutter/material.dart';
@@ -42,15 +44,13 @@ class MyApp extends StatelessWidget {
       initialRoute: '/',
       routes: {
         // When navigating to the "/" route, build the FirstScreen widget.
-        '/': (context) => SplashScreen(),
+        '/': (context) => Signin1(),
         'SignIn1' : (context) => const Signin1(),
         'ListTile': (context) => const ListtileScreen(),
         'SingleUserScreen':  (context) => const Singleuserscreen(),
         'ResourceScreen': (context)  => const ResourceScreen(),
          'ListScreen': (context) => const ListScreen2(title: 'hamza',),
-        //when navigating to the "/second" route, build the SecondScreen widget.
         'RegsiterScreen': (context) => const RegisterScreen(),
-        // 'Resourceloginscreen': (context) => const HomePage(),
         'Securestorage': (context) => MyAppsecurestorage(),
       },
       //home: SplashScreen(),

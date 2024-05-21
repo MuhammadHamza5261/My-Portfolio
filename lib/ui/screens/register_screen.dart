@@ -13,9 +13,10 @@ class RegisterScreen extends StatefulWidget {
 }
 
 class _RegisterScreenState extends State<RegisterScreen> {
+
+
+
   ///text editing controller for handle the text
-
-
   final emailController = TextEditingController();
   final passwordController = TextEditingController();
 
@@ -27,7 +28,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
         child: Padding(
             padding: const EdgeInsets.all(10),
             child: ListView(
-              children: <Widget>[
+              children: [
                 Container(
                     alignment: Alignment.center,
                     padding: const EdgeInsets.all(10),
@@ -36,8 +37,10 @@ class _RegisterScreenState extends State<RegisterScreen> {
                       style: TextStyle(
                           color: Colors.blue,
                           fontWeight: FontWeight.w500,
-                          fontSize: 30),
-                    )),
+                          fontSize: 30,
+                      ),
+                    ),
+                ),
                 Container(
                     alignment: Alignment.center,
                     padding: const EdgeInsets.all(10),
@@ -66,7 +69,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                     ),
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 20,
                 ),
                 ///apply loading state on elevated button
@@ -78,8 +81,9 @@ class _RegisterScreenState extends State<RegisterScreen> {
                           padding: const EdgeInsets.fromLTRB(10, 0, 10, 0),
                           child: ElevatedButton(
                             child: state is RegisterInProgressState ?
-                            CircularProgressIndicator(color: Colors.white,)
-                                : Text('Login'),
+                            const CircularProgressIndicator(color: Colors.white,
+                            )
+                                : const Text('Login'),
                             onPressed: () {
                               BlocProvider.of<RegisterBloc>(context).add(
                                   SetDataToRegisterEvent(
@@ -127,10 +131,13 @@ class _RegisterScreenState extends State<RegisterScreen> {
                               children: [
                                 Text(
                                   '${state.registerModel.id}',
-                                  style: TextStyle(fontSize: 20, color: Colors.black),
+                                  style: const TextStyle(
+                                      fontSize: 20,
+                                      color: Colors.black,
+                                  ),
                                 ),
                                 Text(
-                                  '${state.registerModel.token}',
+                                  state.registerModel.token,
                                   style: TextStyle(fontSize: 20, color: Colors.black),
                                 ),
                               ],
@@ -138,7 +145,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                       }
                       return Container();
                     }
-                )
+                ),
               ],
             )),
       ),

@@ -1,7 +1,6 @@
 import 'package:first/ui/Practise_screens/progress_indicator.dart';
 import 'package:flutter/material.dart';
 import 'dart:async';
-
 import '../First_task/Login_screen_task.dart';
 import 'carusol_slider.dart';
 import 'grid_view.dart';

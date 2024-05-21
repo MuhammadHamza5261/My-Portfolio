@@ -9,7 +9,7 @@ class RegisterBloc extends Bloc<RegisterEvent,RegisterState>
   RegisterModel? registerModel;
   RegisterRepository registerRepository = RegisterRepository();
 
-  RegisterBloc() : super(InitialState())
+  RegisterBloc(): super(InitialState())
   {
     on<RegisterEvent>((event, emit)
     async {

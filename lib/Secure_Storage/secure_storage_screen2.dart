@@ -108,7 +108,7 @@ class _MyDashboardState extends State<MyDashboard> {
 
                   SharedPreferencesClient().removeValues();
                   await SharedPreferencesClient().setBoolValues(true);
-                  // logindata.setBool('login', true);
+
                   Navigator.pushReplacement(context,
                       MaterialPageRoute(builder: (context) => MyLoginPage()));
                   },

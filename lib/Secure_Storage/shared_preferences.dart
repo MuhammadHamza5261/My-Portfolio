@@ -12,6 +12,12 @@ class SharedPreferencesClient {
    await sharedPref.setString(_kUserName, userName);
    await sharedPref.setString(_kPassword, password);
  }
+  ///creating a getter of username
+  Future<String> getUserName() async {
+    SharedPreferences prefs = await SharedPreferences.getInstance();
+    String? userName = prefs.getString(_kUserName);
+    return userName!;
+  }
 
  ///creating a setter of bool
  Future setBoolValues(bool setbool) async
@@ -28,12 +34,7 @@ class SharedPreferencesClient {
   }
 
 
-   ///creating a getter of username
-  Future<String> getUserName() async {
-    SharedPreferences prefs = await SharedPreferences.getInstance();
-    String? userName = prefs.getString(_kUserName);
-    return userName!;
-  }
+
 
   ///creating a getter of password
   Future<String> getPassword() async{
